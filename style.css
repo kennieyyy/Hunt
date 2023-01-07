@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+.carousel {
+  max-width: 800px;
+  margin: 100px auto;
+  background-color: #087f5b;
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 20px;
+  padding-left: 80px;
+  position: relative;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 0 0 32px rgb(0, 0, 0, 0.5);
+  transform: scale(1.5);
+  margin-right: 80px;
+}
+.quote {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 18px 0 18px 0;
+}
+.author {
+  font-size: 18px;
+  font-weight: 400;
+}
+.author-post {
+  font-size: 14px;
+}
+.btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  background-color: white;
+  border: none;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  box-shadow: 0 0 32px rgb(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.btn-left {
+  left: 0;
+  transform: translate(0, -50%);
+  transform: translate(-50%, -50%);
+}
+.btn-right {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.icon {
+  height: 24px;
+  width: 24px;
+  stroke: #087f5b;
+}
+.dots {
+  width: 100px;
+  top: 50%;
+  display: flex;
+  gap: 6px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translate(-50%, 80px);
+  bottom: 0;
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  border: 2px solid #087f5b;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+.active {
+  background-color: #087f5b;
+}
